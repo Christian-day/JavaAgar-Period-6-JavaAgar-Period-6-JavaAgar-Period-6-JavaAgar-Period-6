@@ -5,7 +5,14 @@ import java.awt.geom.Point2D;
 
 public class Food implements Consumable, Drawable
 {
-
+	private Point2D myPoint;
+	
+	public Food()
+	{
+		myPoint = new Point2D.Double();
+		myPoint.setLocation(0, 0);
+	}
+	
 	@Override
 	public void paint(Graphics g)
 	{
@@ -16,15 +23,13 @@ public class Food implements Consumable, Drawable
 	@Override
 	public Point2D getPoint()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return myPoint;
 	}
 
 	@Override
 	public int getValue()
 	{
-		// TODO Auto-generated method stub
-		return 0;
+		return 1;
 	}
 
 	@Override

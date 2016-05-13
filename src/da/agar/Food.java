@@ -1,6 +1,7 @@
 package da.agar;
 
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.geom.Point2D;
 
 public class Food implements Consumable, Drawable
@@ -16,7 +17,11 @@ public class Food implements Consumable, Drawable
 	@Override
 	public void paint(Graphics g)
 	{
-		// TODO Auto-generated method stub
+		Graphics2D g2d = (Graphics2D) g;
+		for (int i = 0; i < 400; i++)
+		{
+			g2d.fillOval(0, 0, 10, 10);
+		}
 		
 	}
 

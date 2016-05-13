@@ -24,10 +24,7 @@ public class Food implements Consumable, Drawable
 	public void paint(Graphics g)
 	{
 		Graphics2D g2d = (Graphics2D) g;
-		for (int i = 0; i < 400; i++)
-		{
-			g2d.fillOval((int) myPoint.getX(), (int) myPoint.getY(), 10, 10);
-		}
+		g2d.fillOval((int) myPoint.getX(), (int) myPoint.getY(), 10, 10);
 	}
 
 	@Override

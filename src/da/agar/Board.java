@@ -47,12 +47,14 @@ public class Board extends Canvas {
 		button2.setBackground(Color.blue);
 		button2.setForeground(Color.green);
 		
+		
 		JButton button3 = new JButton ();
 		button3.setText("AGAR.IO by Danny, Tessa, Anthony, and Mitchell");
 		button3.setBounds(400, 10, 240, 60);
 		button3.setFont(new Font("Apple Casual", Font.BOLD,20));
 		button3.setBackground(Color.blue);
 		button3.setForeground(Color.blue);
+		
 		
 		button2.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
@@ -64,9 +66,16 @@ public class Board extends Canvas {
 		});
 		
 		
+		JButton button4 = new JButton ();
+		button4.setText("Score:     ");
+		button4.setBounds(800, 800, 60, 60);
+		button4.setFont(new Font("Apple Casual", Font.BOLD,20));
+		button4.setBackground(Color.blue);
+		button4.setForeground(Color.blue);
 		
 		
 		panel2.add(button3);
+		panel2.add(button4);
 		frame.add(button);
 		frame.add(button2);
 		frame.add(panel);

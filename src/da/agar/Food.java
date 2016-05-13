@@ -14,15 +14,20 @@ public class Food implements Consumable, Drawable
 		myPoint.setLocation(0, 0);
 	}
 	
+	public Food(int x, int y)
+	{
+		myPoint = new Point2D.Double();
+		myPoint.setLocation(x, y);
+	}
+	
 	@Override
 	public void paint(Graphics g)
 	{
 		Graphics2D g2d = (Graphics2D) g;
 		for (int i = 0; i < 400; i++)
 		{
-			g2d.fillOval(0, 0, 10, 10);
+			g2d.fillOval((int) myPoint.getX(), (int) myPoint.getY(), 10, 10);
 		}
-		
 	}
 
 	@Override

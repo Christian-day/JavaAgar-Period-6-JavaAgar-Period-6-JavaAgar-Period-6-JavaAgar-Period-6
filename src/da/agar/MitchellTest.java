@@ -1,4 +1,4 @@
-package src.da.agar;
+package da.agar;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;

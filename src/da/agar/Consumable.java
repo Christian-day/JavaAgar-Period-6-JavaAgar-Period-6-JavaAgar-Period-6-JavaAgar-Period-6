@@ -1,4 +1,4 @@
-package src.da.agar;
+package da.agar;
 
 public interface Consumable
 {

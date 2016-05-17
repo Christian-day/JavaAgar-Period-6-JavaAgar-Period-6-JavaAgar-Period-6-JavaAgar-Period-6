@@ -14,7 +14,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class Board extends Agar {
+public class Board extends JPanel {
+	
 	public static JTable makeScore (int n){
 		JTable scoreboard = new JTable(n,2); 
 		scoreboard.setGridColor(Color.red); 
@@ -87,13 +88,17 @@ public class Board extends Agar {
 		button4.setBackground(Color.blue);
 		button4.setForeground(Color.blue);
 		
-		JTable scoreboard = makeScore(7);//creating scoreboard
+		JTable scoreboard = makeScore(3);//creating scoreboard
 		scoreboard.setBounds(1000, 500, 100, 100);
 		
+		Agar agario = new Agar(500, 500, 100, Color.BLACK);
+		agario.setVisible(true);
 		panel2.add(scoreboard);
 		panel2.add(button3);//adding stuff to in game panel
 		panel2.add(button4);
-		panel2.add(Agar());
+		panel2.add(agario);
+		
+		
 		
 		frame.add(button);//adding stuff to home page
 		frame.add(button2);

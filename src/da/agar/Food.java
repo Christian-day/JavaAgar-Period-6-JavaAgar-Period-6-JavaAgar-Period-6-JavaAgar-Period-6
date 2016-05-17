@@ -5,16 +5,30 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Point2D;
 
+/**
+ * 
+ * @author 
+ * @version 5.16.2016
+ *
+ */
 public class Food implements Consumable, Drawable
 {
 	private Point2D myPoint;
 	
+	/**
+	 * Create a food object with no location
+	 */
 	public Food()
 	{
 		myPoint = new Point2D.Double();
 		myPoint.setLocation(0, 0);
 	}
 	
+	/**
+	 * Create a food object at the given location
+	 * @param x the x location of the Food
+	 * @param y the y location of the Food
+	 */
 	public Food(int x, int y)
 	{
 		myPoint = new Point2D.Double();
@@ -22,9 +36,8 @@ public class Food implements Consumable, Drawable
 	}
 	
 	@Override
-	public void paint(Graphics g)
+	public void paint(Graphics2D g2d)
 	{
-		Graphics2D g2d = (Graphics2D) g;
 		g2d.fillOval((int) myPoint.getX(), (int) myPoint.getY(), 10, 10);
 	}
 

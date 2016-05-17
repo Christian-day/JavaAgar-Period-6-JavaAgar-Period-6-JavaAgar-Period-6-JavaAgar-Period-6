@@ -39,12 +39,10 @@ public class Board extends JPanel {
 		
 		
 		ImageIcon icon = new ImageIcon("hello.png");//http://stackoverflow.com/questions/3775373/java-how-to-add-image-to-jlabel
-		JLabel label = new JLabel();
-		
-		
 		JButton button = new JButton ();//panel with agar io image
 		button.setIcon(icon);
 		button.setBounds(400, 10, 240, 60);
+		
 		
 		JPanel panel = new JPanel();//home page panel
 		panel.setSize(1000, 1000);
@@ -91,12 +89,10 @@ public class Board extends JPanel {
 		JTable scoreboard = makeScore(3);//creating scoreboard
 		scoreboard.setBounds(1000, 500, 100, 100);
 		
-		Agar agario = new Agar(500, 500, 100, Color.BLACK);
-		agario.setVisible(true);
 		panel2.add(scoreboard);
 		panel2.add(button3);//adding stuff to in game panel
 		panel2.add(button4);
-		panel2.add(agario);
+		
 		
 		
 		

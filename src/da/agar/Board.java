@@ -1,4 +1,4 @@
-package da.agar;
+package src.da.agar;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;

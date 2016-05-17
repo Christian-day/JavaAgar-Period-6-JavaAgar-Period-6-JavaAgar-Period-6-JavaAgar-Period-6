@@ -1,10 +1,16 @@
 
+<<<<<<< HEAD:da/agar/Food.java
 <<<<<<< HEAD:src/da/agar/Food.java
 import java.awt.Color;
 ||||||| merged common ancestors
 =======
 package da.agar;
 >>>>>>> origin/master:da/agar/Food.java
+||||||| merged common ancestors
+package da.agar;
+=======
+package src.da.agar;
+>>>>>>> origin/master:src/da/agar/Food.java
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Point2D;

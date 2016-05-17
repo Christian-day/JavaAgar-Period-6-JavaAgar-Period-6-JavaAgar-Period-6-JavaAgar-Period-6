@@ -1,4 +1,4 @@
-package da.agar;
+package src.da.agar;
 
 import java.awt.geom.Point2D;
 

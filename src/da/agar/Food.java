@@ -1,5 +1,6 @@
 package da.agar;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.Point2D;
@@ -44,5 +45,14 @@ public class Food implements Consumable, Drawable
 	{
 		// TODO Auto-generated method stub
 		return 0;
+	}
+	
+	public Color getColor()
+	{
+		int R = (int) (Math.random()*256);
+		int G = (int) (Math.random()*256);
+		int B = (int) (Math.random()*256);
+		return new Color(R, G, B);
+
 	}
 }
